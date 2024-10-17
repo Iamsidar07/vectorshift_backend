@@ -8,7 +8,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Replace with specific origins as needed
+    allow_origins=["http://localhost:3000", "https://vectorshift-navy.vercel.app"],  # Replace with specific origins as needed
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
